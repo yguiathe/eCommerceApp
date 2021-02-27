@@ -15,6 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import javax.transaction.Transactional;
+
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
@@ -33,6 +35,7 @@ public class UserEndpointsIntegrationTests {
     private JacksonTester<ModifyCartRequest> json;
 
     @Test
+    @Transactional
     public void shouldSuccessfullyLogin() throws Exception {
         CreateUserRequest createUserRequest = new CreateUserRequest();
         createUserRequest.setUsername("jdoe");
@@ -57,6 +60,7 @@ public class UserEndpointsIntegrationTests {
     }
 
     @Test
+    @Transactional
     public void shouldSuccessfullyLoginAndItemToCart() throws Exception {
         CreateUserRequest createUserRequest = new CreateUserRequest();
         createUserRequest.setUsername("jiglesias");

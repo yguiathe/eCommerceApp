@@ -109,6 +109,7 @@
 				<version>2.22.1</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
+					<argLine>-javaagent:${settings.localRepository}/org/jacoco/org.jacoco.agent/0.8.3/org.jacoco.agent-0.8.3-runtime.jar=destfile=${project.build.directory}/jacoco.exec</argLine>
 				</configuration>
 			</plugin>
 			<plugin>

@@ -126,5 +126,6 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat:servlet-api:6.0.29" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tomcat:coyote:6.0.29" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.tomcat:dbcp:6.0.29" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.jacoco:org.jacoco.agent:runtime:0.8.3" level="project" />
   </component>
 </module>

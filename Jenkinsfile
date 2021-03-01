@@ -13,7 +13,7 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Preparation') {
             steps {
                 // Get some code from a GitHub repository
                 git branch: 'main', url: 'https://github.com/yguiathe/eCommerceApp.git'
